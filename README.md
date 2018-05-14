@@ -12,11 +12,12 @@ In this project I have implemented PID controller to control the motion of a car
 ### Describe how the final hyperparameters were chosen
 I arrived at the final values of hyperparameters by manual trial and error approach. Initially I started with same values of Kp, Kd and Ki as were given in Udacity's lesson, but the car was oscillating too much using those values. Then I tried with Kd of 5.0 which allowed the car to have a term of differential error according to the change in CTE. Also, I kept the integral coefficient small enough to smoothen the adjustment of the car to the desired values. 
 After a lot of trial and runs my car was able to drive the complete track with below mentioned values of hyper-parameters.
-##### P: 0.3
-##### I: 0.000005
+##### P: 0.15
+##### I: 0.00005
 ##### D: 5
 
 ## Simulation
 
 ### The vehicle must successfully drive a lap around the track.
 The car successfully drived a lap without leaving the track. There are some places where the car is osscilating but it successfully recovers itself and tries to keep itself in the middle of the road.
+[Video Link](https://www.youtube.com/watch?v=rzpKJyElUUk)
