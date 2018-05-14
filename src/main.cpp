@@ -52,8 +52,8 @@ int main()
         if (event == "telemetry") {
           // j[1] is the data JSON object
           double cte = std::stod(j[1]["cte"].get<std::string>());
-          // double speed = std::stod(j[1]["speed"].get<std::string>());
-          double speed = 50.0;
+          double speed = std::stod(j[1]["speed"].get<std::string>());
+          // double speed = 50.0;
           double angle = std::stod(j[1]["steering_angle"].get<std::string>());
           double steer_value;
           /*
